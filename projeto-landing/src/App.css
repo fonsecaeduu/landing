@@ -1,42 +1,47 @@
-#root {
+.app {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding-left: 10px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  gap: 48px;
+  padding: 24px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar {
+  width: 8px;  /* Largura do scroll */
+  height: 8px; /* Altura do scroll (para scroll horizontal) */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Estilo do fundo do scroll */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0); /* Fundo transparente */
+  border-radius: 10px;
 }
 
-.card {
-  padding: 2em;
+/* Estilo do thumb (barra de rolagem) */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Cor do thumb (branco) */
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0); /* Borda transparente para um efeito mais suave */
 }
 
-.read-the-docs {
-  color: #888;
+/* Estilo do thumb quando estiver sendo tocado/arrastado */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d3d3d3; /* Cor do thumb quando em hover */
 }

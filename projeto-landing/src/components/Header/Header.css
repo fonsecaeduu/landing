@@ -1,0 +1,34 @@
+header {
+    padding: 24px;
+    margin: 0;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-list {
+    display: flex;
+    gap: 48px;
+}
+
+.nav-item {
+    list-style: none;
+    color: var(--corFonte);
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: var(--corFonte)
+}
+
+.nav-item.active a {
+    border-bottom: solid 4px var(--corAnaloga2);
+}
+
+#nav-phone {
+    display: none;
+}
